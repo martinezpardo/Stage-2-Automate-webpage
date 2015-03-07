@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="pagestyle.css">
+		<meta charset="utf-8"/>
+		<title>
+			Udacity Nanodegree
+		</title>
+	</head>
+	<body>
+		<h1>Stage 1: Webpages, Documents, and Structure</h1>
+
+		<div class="lesson">
+			<h2>1. The Basics of the Web and HTML:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					<b>The Basics of the <a href=" http://en.wikipedia.org/wiki/Web_page"> Web</a></b>
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>The web (www):</b> collection of html documents (HyperText Markup Language). HTML is what glues the Internet together. Around 30 billion pages
+					</p>
+					<p>
+						<b>Main pieces:</b> you, your computer + browser (a program to display files found on the web), the internet (the world largest computer network), http (the main protocol of the web), servers (computer in a closer that host the files)
+					</p>
+					<p>
+						<b>HTML (Hyper Text markup language):</b> is made up of text content (what you see), markup (what it looks like), references to other documents (e.g.: images + videos), links to other pages
+					</p>
+					<p>
+						<b>Computers are Stupid:</b>
+						Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax").
+					</p>
+					<p>
+						<b>Abstract thinking to avoid repetition:</b> Abstract thinking means finding similarity, or as programmers would say, generality amongst seemingly different things. It would be impractical for a programmer to specifically program each of these pages individually. Abstraction allows to avoid unnecessary repetition of work.
+					<p>
+						<b>Programmers Can't Remember Everything:</b>
+						There are too many details to keep everything in your head.
+					</p>
+				</div>
+				<div class="concept-title">
+					<b>Basics of <a href="http://en.wikipedia.org/wiki/HTML">HTML </a></b>
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>Basic HTML Vocabulary:</b>
+					<ul class="ulist1">
+						<li><span class="italic">Tag:</span> An HTML tag is always contained within angled brackets. Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;). Some tags (called "void" tags) do not require a closing tag (like the &lt;br&gt; tag).</li>
+						<li><span class="italic">Element:</span> An HTML element refers to everything within a set of opening and closing tags.</li>
+						<li><span class="italic">Attribute:</span> This is a property of an HTML element. For example, to set thehref attribute of an anchor tag to the Udacity URL, you would write&lt;a href="www.udacity.com"&gt;</li>
+					</ul>
+					<p>
+						<b>HTML Structure: </b>there are many tags. An opening for the type of document !DOCTYPE HTML>. Then HTML opening html>. Then head (metadata, title, etc.). then body.<br>
+						<b>Whitespace: </b> all blank in html translates to a space. For a new line: br break (void). It's an inline element. Br ends a line<br>
+						<b>Paragraph tag:</b> It's a block element. It's rendering an invisible box around the text. There are also <span class="italic">container elements</span><br>
+						<b>Span (inline) / Div (block):</b> they just contain the content, and you can add styles to them<br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>2. Creating a structured document with HTML:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					Intro to HTML and CSS
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>How do you translate a design to a website?</b><br>
+						Think of a website like a house:<br>
+					<ul class="ulist1">
+						<li>HTML: structure</li>
+						<li>CSS: style (decoration, colors,...)</li>
+						<li>Javascript: interactive components (remote control, garage door open, etc...)</li>
+						<li>Tools to build it</li>
+					</ul>
+					<p>
+						<b>HTML:</b> language of the web, specific syntax. Basic word is a tag. The browser turns the tags into elements that form a tree (HTML Tree-like structure or branching structure)<br>
+						All visible elements are rectangular on a webpage, all visible text is on the code. HTML elements are either inline or block.<br>
+						It does this thanks to Document Object Model (standard convention). Each HTML creates an element in the DOM that the browser uses to display the page. It can be empty, content or another element. Each tag has a name or type. Each tag can also have attributes with values.
+					</p>
+					<p>
+						<b>CSS:</b> another language. Allows to use specific syntax and rules to change how elements look on the page: font, size, background, position, color, etc.
+					</P>
+					<p>
+						<b>To tie HTML and CSS:</b> the HTML document can provide the browser with information on what style to use and where to get it.
+					</p>
+					<p>
+						<b>Everything is a box in a webpage:</b> Boxify a Design. Breakdown any design into boxes. Move from big to the small. <b>&lt;div&gt;</b> don't only contain the content, it creates a box around the content, to separate boxes. Add class names to identify them.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>3. Adding CSS Style to HTML Structure:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					<b>Basics of <a href="http://en.wikipedia.org/wiki/CSS">CSS </a></b>
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>CSS stands for "Cascading Style Sheets"</b><br>
+						You can have several CSS files referenced in an HTML file. Most specific rule applies (Cascading)<br>
+						Style can be added on the same HTML file in between style tags and even inline (not a good idea)
+					</p>
+					<p>
+						<b>Inheritance:</b> is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. It relies on the document tree. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br>
+						In CSS you first write a selector, to identify what the style will be applied to. Another way is to select elements by class (attribute, column, value).<br>
+						CSS properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference<br>
+						Changing the style properties of an element only changes how the element is displayed, not the element itself
+					</p>
+					<p>
+						<b>Box Sizing:</b><br>
+					<ol class='olist1'>
+						<li>HTML elements are boxes and each box has 4 components</li>
+					<li>Because there are so many components to each box, it can often be hard to get the size of a box just right</li>
+					<li>There are two techniques you can use to help deal with sizing issues:</li>
+					<li>
+						<ul class='ulist2'>
+							<li>Set sizes in terms of percents rather than pixels</li>
+							<li>Set the box-sizing attribute to border-box for every element</li>
+						</ul>
+					</li>
+					<li>Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently</li>
+					</ol>
+					<p>
+						<b>Box Positioning:</b><br>
+						- Divs are block elements (as opposed to inline), so by default they take up the entire width of a page<br>
+						- Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other<br>
+					</p>
+				</div>
+				<div class="concept-title">
+					<b>Other takeaways</b>
+				</div>
+				<div class="concept-description">
+					<p>
+						<b>Code - test - refine:</b><br>
+					<ol class='olist1'>
+						<li>Look for natural boxes</li>
+						<li>Look for repeated styles and semantic elements (relate to HTML)</li>
+						<li>Write HTML</li>
+						<li>Apply styles: from biggest to smallest</li>
+						<li>Fix things (resize windows, other browsers, etc.)</li>
+					</ol>
+					<p>
+						In HTML, code comments begin with greater!-- and end with -->. Everything in between is ignored. In CSS, code comments begin with /* and end with */.
+					</p>
+				</div>
+			</div>
+		</div>
+		<h1>Stage 2: Telling Computers What To Do</h1>
+		<div class="lesson">
+			<h2>1. Introduction to "Serious" Programming:</h2>
+			<div class="notes">
+				<div class="concept">
+				    <div class="concept-title">
+				        Computer Science: Computers and Programming
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Computer science is about how to solve problems breaking them into smaller pieces and then precisely and mechanically describe a sequence of steps to solve each piece that can be executed by a computer. A computer is an universal machine, we can program it to do any computation. Programming is the core of Computer Science. A program needs to be a precise sequence of steps. The power of the Computer is that it can execute these steps super fast
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Programming Language
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Why do we need to invent new languages to program computers, rather than using natural languages? Ambiguity, Verbosity. A programming language is what programmers use to tell a computer what to do
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Grammar
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Backus-Naur Form purpose is to describe precisely language in a simple and concise way: non-terminal - replacement. Terminals are never on the left side of the rule. Replacing you get derivations
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Other Takeaways
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	<ul class='ulist1'>
+								<li><b>Recursive definition (non circular):</b> we need two rules: one with the same thing on the left and the right side and one where we can stop</li>
+								<li><b>High level language:</b> instead of running in the computer is an interpreter which translates to the language of the computer</li>
+								<li><b>Compiler:</b> is a program that produces other programs. It does all the work at once and then runs the program, an interpreter does everything at the same time</li>
+							</ul>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>2. Variables and Strings:</h2>
+			<div class="notes">
+				<div class="concept">
+				    <div class="concept-title">
+				        What are variables?
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Variables is a way to give names to values. Variables (obviously) can vary. They improve code readability by giving meaningful names, they allow us to store important data.
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Assigning a value to a variable
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	To assign a value to a variable, simply input in Python the following assignment statement: <span class='Phyton_Code'>Variable_Name = Expression</span>
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Other Takeaways
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Python evaluates first the right side. Indexing: <span class='Phyton_Code'>string[expression]</span> -> one-character string (expression should evaluate to a number)
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>3. Input -> Function -> Output:</h2>
+			<div class="notes">
+				<div class="concept">
+				    <div class="concept-title">
+				        What is a function (procedure)?
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Functions take input, do something with it, and then produce output.
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Phyton syntax to create functions
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	<span class='Phyton_Code'>Procedure (input,input,...)</span> Inputs are also called operands, arguments. Inputs must match the ones used in the procedure. Return is the output. If you want a function to produce output, it must end with a return statement.<br>
+							First line of a function: must begin the line with <span class='Phyton_Code'>def</span> (lowercase). After def there must be a function name. Next, it must have a set of parentheses with the required parameters inside. The line must end with : colon.<br>
+							In the body of the function: every line in the function must be indented.
+							<div class="code-block">
+								def procedure(x):<br>
+								<span class="indent">answer = x * x</span><br>
+								<span class="indent">return answer</span><br>
+							</div>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Using functions
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Once created, you can use the function by writings its name followed by () with the required inputs. This helps avoid repetition, as instead of writing the definition everytime we need it we just define it once and then use it by simply writing its name and inputs.
+						</p>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>4. Decisions and Repetition: If and While:</h2>
+			<div class="notes">
+				<div class="concept">
+				    <div class="concept-title">
+				        Making decisions
+				    </div>
+				    <div class="concept-description">
+						<p>
+							With arithmetic, comparisons, procedures and if to make decisions you know enough to write every possible computer program (as proved by Alan Turing)<br>
+				        	<span class='Phyton_Code'>Number Operator Number - Boolean</span> (True or False)<br>
+						</p>
+						<p>
+							<b>If:</b> If statements match a decision flowchart. The indentations in the code correspond to branches in the flow chart.<br>
+							<div class="code-block">
+								if TestExpression:<br>
+								<span class="indent">Code Block</span>
+							</div><br>
+						<p>
+							<b>Or:</b> <span class='Phyton_Code'>Expression or Expression</span> only evaluates what it needs to, once an expression is TRUE it stops.
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Repetitions
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	<b>Loops:</b> if executes 0 or 1 times (depending if it's True). while executes n times, as long as it's True
+							<div class="code-block">
+							while TestExpression:<br>
+							<span class="indent">Code Block</span>
+							</div>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        How to break a loop
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        <b>Break:</b>
+						</p>
+						<div class="code-block">
+						While TextExpression:<br>
+						<span class="indent">Code</span><br>
+						<span class="indent">if BreakTest:</span><br>
+						<span class="indent"><span class="indent">break</span></span><br>
+						More Code after While
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>5. Structured Data: Lists and For Loops:</h2>
+			<div class="notes">
+				<div class="concept">
+				    <div class="concept-title">
+				        Lists
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	Lists can contain strings, numbers, even other lists, it's a sequence of anything (strings are only of characters)<br>
+				list - <span class='Phyton_Code'>[Expression,Expression,...]</span><br>
+							An advantage of structured data is that you can look through the elements (for loop)
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        Mutation and aliasing
+				    </div>
+				    <div class="concept-description">
+						<p>
+				        	<b>Mutation:</b> we can change values of a list after is created. Strings are immutable. We can change elements of the list without creating a new list.<br>
+							<b>Aliasing:</b> two different ways to refer to the same object. If the element changes, all variables values change too
+						</p>
+				    </div>
+				</div>
+				<div class="concept">
+				    <div class="concept-title">
+				        List operations
+				    </div>
+				    <div class="concept-description">
+						<p>
+							<ul class='ulist1'>
+								<li><span class='Phyton_Code'>list.append(element)</span> - it mutates the list</li>
+								<li><span class='Phyton_Code'>list + list</span>- produces a new list</li>
+								<li><span class='Phyton_Code'>len(list)</span> - length of the list</li>
+								<li><b>For loops</b> (each element of the list):<br>
+									<div class="code-block">
+										for name in list:<br>
+										<span class="indent">block</span><br>
+									</div></li>
+								<li><b>Index:</b> <span class='Phyton_Code'>list.index(value)</span> If value is in the list, returns the first position where value is found in list. Otherwise, produces an error.</li>
+								<li><span class='Phyton_Code'>value in list</span> , and <span class='Phyton_Code'>value not in list</span></li>
+							</ul>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
